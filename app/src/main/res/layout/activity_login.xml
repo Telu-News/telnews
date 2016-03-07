@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView android:src="@drawable/telwhite"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:gravity="center"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical"
+        android:paddingLeft="72dp"
+        android:paddingRight="72dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang\nTelU-news."
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="40dp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:background="@drawable/bottom_color"
+                android:hint="NIM"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="12dp"
+                android:paddingTop="5dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:textColor="#fff"
+                android:hint="kata sandi"
+                android:textColorHint="@color/colorAccent"
+                android:background="@drawable/bottom_color"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="60dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLoginLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/button_press_white"
+                android:text="Masuk"
+                android:onClick="actionLogin"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimary">
+            </Button>
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:text="Daftar"
+                android:textColor="#ffffff"
+                android:onClick="actionRegister"
+                android:layout_marginLeft="5dp">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

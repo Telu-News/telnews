@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical"
+    android:paddingLeft="56dp"
+    android:paddingRight="56dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="daftar baru"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="25dp"
+            android:hint="Nama Lengkap"
+            android:background="@drawable/bottom_red"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="25dp"
+            android:hint="NIM"
+            android:background="@drawable/bottom_red"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="25dp"
+            android:hint="Nomor Telepon"
+            android:background="@drawable/bottom_red"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="25dp"
+            android:hint="Email"
+            android:background="@drawable/bottom_red"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="25dp"
+            android:hint="Kata sandi"
+            android:background="@drawable/bottom_red"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLoginLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="kembali ke login"
+            android:textAlignment="textStart"
+            android:textSize="5pt"
+            android:layout_marginRight="5dp"
+            android:onClick="actionBack">
+        </Button>
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/button_press_red"
+            android:layout_weight="1"
+            android:text="Daftar"
+            android:textSize="6pt"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:onClick="actionRegistered">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
